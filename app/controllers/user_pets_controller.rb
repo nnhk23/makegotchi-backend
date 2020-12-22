@@ -1,0 +1,2 @@
+class UserPetsController < ApplicationController
+end
