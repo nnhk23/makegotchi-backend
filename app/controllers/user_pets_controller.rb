@@ -13,4 +13,19 @@ class UserPetsController < ApplicationController
         )
     end
 
+    def update
+        user = User.find(params[:user_id])
+        pet = Pet.find(params[:pet_id])
+        user_pets = user.user_pets
+        user_pet.update(user_pet_params)
+        render json: user_pets
+    end
+
+
+    private
+
+    def user_pet_params
+        params.require(:user_pet).permit(:id, :name, :happiness_score, :user_id, :pet_id)
+    end
+
 end
