@@ -13,12 +13,18 @@ class UserPetsController < ApplicationController
         )
     end
 
-    def update
+    def create
         user = User.find(params[:user_id])
         pet = Pet.find(params[:pet_id])
-        user_pets = user.user_pets
-        user_pet.update(user_pet_params)
-        render json: user_pets
+        user_pet = UserPet.create(user_pet_params)
+        render json: user_pet.to_json(
+            :include => {
+                :pet => {
+                    :except => [:created_at, :updated_at]
+                }
+            },
+            :except => [:created_at, :updated_at]
+        )
     end
 
 
