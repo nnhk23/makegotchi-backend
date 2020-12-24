@@ -10,6 +10,7 @@ class UsersController < ApplicationController
             },
             :except => [:created_at, :updated_at]
         )
+    end
 
     def create
         user = User.find_or_create_by(user_params)
