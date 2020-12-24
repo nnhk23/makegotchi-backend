@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2020_12_22_195232) do
 
   create_table "user_pets", force: :cascade do |t|
     t.string "name"
-    t.integer "happiness_score"
+    t.integer "happiness_score", default: 100
     t.datetime "last_fed"
     t.datetime "last_slept"
     t.datetime "last_cleaned"
