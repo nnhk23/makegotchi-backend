@@ -1,4 +1,5 @@
 class UserPetsController < ApplicationController
+    before_action :authorized, only: [:create]
 
     def index
         user = User.find(params[:user_id])
@@ -13,7 +14,9 @@ class UserPetsController < ApplicationController
         )
     end
 
+
     def create
+        # byebug
         user = User.find(params[:user_id])
         pet = Pet.find(params[:pet_id])
         user_pet = UserPet.create(user_pet_params)
