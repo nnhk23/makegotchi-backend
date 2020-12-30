@@ -11,7 +11,7 @@ PET = [
     {
         "personality": "Lazy",
         "species": "Kikitchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -23,7 +23,7 @@ PET = [
     {
         "personality": "Peppy",
         "species": "Mametchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -35,7 +35,7 @@ PET = [
     {
         "personality": "Peppy",
         "species": "Lovelitchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -47,7 +47,7 @@ PET = [
     {
         "personality": "Peppy",
         "species": "Nyatchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -59,19 +59,19 @@ PET = [
     {
         "personality": "Lazy",
         "species": "Kuchipatchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
         "dirt_rate": 120,
         # 120 seconds (2 mins)
-        "img_icon": "https://static.wikia.nocookie.net/tamagotchi/images/a/ab/Kuchipatchi_sprite_app1.png",
+        "img_icon": "https://i.pinimg.com/originals/94/97/df/9497df54da7c5e60842e7cdad36645f3.png",
         "img_url": "https://static.wikia.nocookie.net/tamagotchi/images/5/53/Kuchipatchi.PNG"
     },
     {
         "personality": "Cranky",
         "species": "KuroMametchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -83,7 +83,7 @@ PET = [
     {
         "personality": "Peppy",
         "species": "Melodytchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -95,7 +95,7 @@ PET = [
     {
         "personality": "Lazy",
         "species": "Mimitchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -107,17 +107,17 @@ PET = [
     {
         "personality": "Peppy",
         "species": "Ginjirotchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
         "dirt_rate": 120,
         # 120 seconds (2 mins)
-        "img_icon": "https://static.wikia.nocookie.net/tamagotchi/images/6/68/Ginjirotchi_sprite_app1.png",
+        "img_icon": "https://static.wikia.nocookie.net/tamagotchi/images/b/bd/Ginjirotchi_tah.png",
         "img_url": "https://static.wikia.nocookie.net/tamagotchi/images/9/91/Ginjirotchi_blue.png"
     }
 ]
-PET.map{|pet| 
+PET.map{|pet|
     Pet.create(pet)
 }
 
