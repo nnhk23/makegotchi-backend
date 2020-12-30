@@ -42,7 +42,7 @@ PET = [
         "dirt_rate": 120,
         # 120 seconds (2 mins)
         "img_icon": "https://static.wikia.nocookie.net/tamagotchi/images/4/41/Lovelin_Blue.png",
-        "img_url": "https://static.wikia.nocookie.net/tamagotchi/images/8/8d/Lovelitchi_anime.PNG"
+        "img_url": "https://static.wikia.nocookie.net/tamagotchi/images/b/bb/Lovelitchi_blue_large.png"
     },
     {
         "personality": "Peppy",
@@ -65,7 +65,7 @@ PET = [
         # 600 seconds (10mins)
         "dirt_rate": 120,
         # 120 seconds (2 mins)
-        "img_icon": "https://static.wikia.nocookie.net/tamagotchi/images/a/ab/Kuchipatchi_sprite_app1.png",
+        "img_icon": "https://i.pinimg.com/originals/94/97/df/9497df54da7c5e60842e7cdad36645f3.png",
         "img_url": "https://static.wikia.nocookie.net/tamagotchi/images/5/53/Kuchipatchi.PNG"
     },
     {
@@ -113,7 +113,7 @@ PET = [
         # 600 seconds (10mins)
         "dirt_rate": 120,
         # 120 seconds (2 mins)
-        "img_icon": "https://static.wikia.nocookie.net/tamagotchi/images/6/68/Ginjirotchi_sprite_app1.png",
+        "img_icon": "https://static.wikia.nocookie.net/tamagotchi/images/b/bd/Ginjirotchi_tah.png",
         "img_url": "https://static.wikia.nocookie.net/tamagotchi/images/9/91/Ginjirotchi_blue.png"
     }
 ]
