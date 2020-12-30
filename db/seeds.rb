@@ -42,7 +42,7 @@ PET = [
         "dirt_rate": 120,
         # 120 seconds (2 mins)
         "img_icon": "https://static.wikia.nocookie.net/tamagotchi/images/4/41/Lovelin_Blue.png",
-        "img_url": "https://static.wikia.nocookie.net/tamagotchi/images/8/8d/Lovelitchi_anime.PNG"
+        "img_url": "https://static.wikia.nocookie.net/tamagotchi/images/b/bb/Lovelitchi_blue_large.png"
     },
     {
         "personality": "Peppy",

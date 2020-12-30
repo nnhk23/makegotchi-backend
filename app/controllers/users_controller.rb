@@ -24,10 +24,16 @@ class UsersController < ApplicationController
     end
 
     def update
-        user = User.find(user_params[:id])
-        if user.update(user_params)
-            render json: {user: UserSerializer.new(user)}
-        end
+        user = User.find(params[:id])
+        user.update(user_params)
+        render json: user.to_json(
+            :include => {
+                :user_pets => {
+                    :except => [:created_at, :updated_at]
+                }
+            },
+            :except => [:created_at, :updated_at]
+        )
     end
 
     def login
@@ -54,7 +60,7 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.permit(:name, :username, :password, :id)
+        params.permit(:name, :username, :password, :buys_left, :id)
     end
 
 end
