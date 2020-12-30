@@ -11,7 +11,7 @@ PET = [
     {
         "personality": "Lazy",
         "species": "Kikitchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -23,7 +23,7 @@ PET = [
     {
         "personality": "Peppy",
         "species": "Mametchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -35,7 +35,7 @@ PET = [
     {
         "personality": "Peppy",
         "species": "Lovelitchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -47,7 +47,7 @@ PET = [
     {
         "personality": "Peppy",
         "species": "Nyatchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -59,7 +59,7 @@ PET = [
     {
         "personality": "Lazy",
         "species": "Kuchipatchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -71,7 +71,7 @@ PET = [
     {
         "personality": "Cranky",
         "species": "KuroMametchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -83,7 +83,7 @@ PET = [
     {
         "personality": "Peppy",
         "species": "Melodytchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -95,7 +95,7 @@ PET = [
     {
         "personality": "Lazy",
         "species": "Mimitchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -107,7 +107,7 @@ PET = [
     {
         "personality": "Peppy",
         "species": "Ginjirotchi",
-        "hunger_rate": 30, 
+        "hunger_rate": 30,
         # 30 seconds
         "sleepy_rate": 600,
         # 600 seconds (10mins)
@@ -117,7 +117,7 @@ PET = [
         "img_url": "https://static.wikia.nocookie.net/tamagotchi/images/9/91/Ginjirotchi_blue.png"
     }
 ]
-PET.map{|pet| 
+PET.map{|pet|
     Pet.create(pet)
 }
 
