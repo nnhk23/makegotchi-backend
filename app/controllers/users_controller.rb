@@ -17,12 +17,18 @@ class UsersController < ApplicationController
         user = User.new(user_params)
         if user.save
             token = encode_token(user_id: user.id)
-            render json: {user: user, token: token}
+            render json: {user: UserSerializer.new(user), token: token}
         else
-            render json: user.errors
+            render json: {error: "Username has already been taken. Please try again."}
         end
     end
 
+    def update
+        user = User.find(user_params[:id])
+        if user.update(user_params)
+            render json: {user: UserSerializer.new(user)}
+        end
+    end
 
     def login
         # byebug
@@ -31,15 +37,24 @@ class UsersController < ApplicationController
             token = encode_token(user_id: user.id)
             render json: {user: UserSerializer.new(user), token: token}
         else
-            render json: {error: "Incorrect Credentials"}
+            render json: {error: "Incorrect credentials, please try again."}
         end
     end
 
+    def get_user
+        render json: {user: UserSerializer.new(current_user)}
+    end
+
+    def destroy
+        user = User.find(user_params[:id])
+        user.destroy
+        render json: user
+    end
 
     private
 
     def user_params
-        params.permit(:name, :username, :password)
+        params.permit(:name, :username, :password, :id)
     end
 
 end
