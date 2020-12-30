@@ -1,5 +1,5 @@
 class UserPetsController < ApplicationController
-    before_action :authorized, only: [:create]
+    # before_action :authorized, only: [:create]
 
     def index
         user = User.find(params[:user_id])
@@ -29,6 +29,16 @@ class UserPetsController < ApplicationController
             :except => [:created_at, :updated_at]
         )
     end
+
+    #if we were to use JWT
+    # def create
+    #     user_pet = UserPet.new(user_id: current_user.id, pet_id: user_pet_params[:pet_id], name: user_pet_params[:name] )
+    #     if user_pet.save
+    #         render json: {user: UserSerializer.new(current_user)}
+    #     else
+    #         render json: userpet.errors
+    #     end
+    # end
 
 
     private
