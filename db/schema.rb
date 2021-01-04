@@ -46,7 +46,9 @@ ActiveRecord::Schema.define(version: 2020_12_22_195232) do
     t.string "username"
     t.string "name"
     t.string "password_digest"
-    t.integer "buys_left", default: 3
+    t.integer "buys_left", default: 100
+    t.integer "plays_left", default: 5
+    t.integer "money", default: 500
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
