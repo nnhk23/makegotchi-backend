@@ -8,6 +8,7 @@ class CreatePets < ActiveRecord::Migration[6.0]
       t.string :img_url
       t.string :img_icon
       t.string :personality
+      t.integer :price
 
       t.timestamps
     end
