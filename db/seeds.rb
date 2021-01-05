@@ -75,9 +75,9 @@ PET = [
     {
         "personality": "Lazy",
         "species": "Doraemon",
-        "img_icon": "https://www.freepnglogos.com/uploads/doraemon-png/download-doraemon-png-transparent-image-and-clipart-33.png",
+        "img_icon": "https://c.tenor.com/I-6EAclS024AAAAj/doraemon-sleeping.gif",
         "price": 400,
-        "img_url": "https://media.tenor.com/images/4e435dd5a5a810baead8ac869676eff7/tenor.gif"
+        "img_url": "https://c.tenor.com/BpKxlZSGHrcAAAAj/doraemon.gif"
     },
     {
         "personality": "Peppy",
