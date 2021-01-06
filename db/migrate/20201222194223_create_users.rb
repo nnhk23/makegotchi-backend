@@ -4,8 +4,8 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :username
       t.string :name
       t.string :password_digest
-      t.integer :buys_left, default: 3
-
+      t.integer :plays_left, default: 5
+      t.integer :money, default: 500
       t.timestamps
     end
   end

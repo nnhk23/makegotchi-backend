@@ -1,5 +1,5 @@
 class UserPetsController < ApplicationController
-    # before_action :authorized, only: [:create]
+    # before_action :authorized, except: [:index]
 
     def index
         user = User.find(params[:user_id])

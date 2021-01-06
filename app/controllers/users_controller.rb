@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    #skip_before_action :authorized, only: [:create, :login]
 
     def show 
         user = User.find(params[:id])
@@ -20,6 +21,7 @@ class UsersController < ApplicationController
             render json: {user: UserSerializer.new(user), token: token}
         else
             render json: {error: "Username has already been taken. Please try again."}
+            # render json: {error: user.errors.full_messages}
         end
     end
 
@@ -60,7 +62,7 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.permit(:name, :username, :password, :buys_left, :id)
+        params.permit(:name, :username, :password, :id, :money, :plays_left)
     end
 
 end
