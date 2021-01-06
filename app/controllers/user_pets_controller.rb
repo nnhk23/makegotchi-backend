@@ -43,6 +43,11 @@ class UserPetsController < ApplicationController
         )
     end
 
+    def destroy
+        user_pet = UserPet.find(params[:id])
+        user_pet.destroy
+    end
+
     #if we were to use JWT
     # def create
     #     user_pet = UserPet.new(user_id: current_user.id, pet_id: user_pet_params[:pet_id], name: user_pet_params[:name] )
