@@ -27,15 +27,18 @@ class UsersController < ApplicationController
 
     def update
         user = User.find(params[:id])
-        user.update(user_params)
-        render json: user.to_json(
-            :include => {
-                :user_pets => {
-                    :except => [:created_at, :updated_at]
-                }
-            },
-            :except => [:created_at, :updated_at]
-        )
+        if user.update(user_params)
+            render json: user.to_json(
+                :include => {
+                    :user_pets => {
+                        :except => [:created_at, :updated_at]
+                    }
+                },
+                :except => [:created_at, :updated_at]
+            )
+        else
+            render json: {error: "Username has already been taken. Sorry can't update your profile."}
+        end
     end
 
     def login
